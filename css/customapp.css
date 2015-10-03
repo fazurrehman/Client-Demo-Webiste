@@ -1,0 +1,261 @@
+/* custom css */
+body{
+  font: 400 16px/1 'Pontano Sans', Helvetica, Arial, sans-serif;
+  color: #666666;
+  letter-spacing: 1px;
+  -webkit-font-smoothing:antialiased !important;
+  font-family: 'Pontano Sans', sans-serif;
+}
+
+/* typography*/
+p{
+    line-height: 30px;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #2c3e50;
+    text-transform: uppercase;
+}
+
+/* link */
+a{
+  font-family: 'Montserrat', sans-serif;
+  color: #777;
+  transition: 150ms all ease-in-out;
+}
+a:hover, a:focus{
+    color: #2980b9;
+}
+
+/* btn */
+.btn-default{
+    background: #fff;
+    border: 3px solid rgba(52, 152, 219,1.0);
+    font-size: 14px;
+    color: #95a5a6;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 11px 20px;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+}
+
+.btn-default:hover{
+    background: #fff;
+    color: #3498db;
+    border: 3px solid rgba(52, 152, 219,1.0);
+}
+
+.btn:active{
+    box-shadow: none;
+}
+
+/* container reset */
+.container{
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+}
+
+@media (min-width: 550px) {
+  .container {
+    width: 96%; }
+}
+
+/* custom navbar 
+*******************************************************/
+.header{
+  padding: 15px 0;
+}
+
+.navbar-default{
+  border: none;
+  background: none;
+}
+
+
+.navbar-brand{
+  width: 150px;
+  height: 125px;
+  padding: 0;
+  background: url(../img/logo.png) no-repeat;
+  text-indent: -9999px;
+}
+
+.navbar-default .navbar-nav>li>a{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2em;
+  letter-spacing: .3px;
+  color: #777777;
+  padding: 15px 15px;
+  text-align: right;
+  border-bottom: 1px solid rgba(0,0,0,.050);
+}
+
+.navbar-default .navbar-nav>li:last-child>a{
+  border-bottom: none;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  color: #f39c12;
+  background: none;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+  color: #f39c12;
+}
+
+/* toggle */
+.navbar-toggle{
+  margin-top: 45px;
+  border: 0;
+  background: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background: #333;
+}
+
+.navbar-toggle .icon-bar{
+  width: 30px;
+  height: 3px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar{
+  margin-top: 5px;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background: none;
+    outline: none;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background: none;
+  color: #f39c12
+}
+
+.navbar-collapse{
+  background: #ecf0f1;
+  margin-top: 15px;
+}
+
+/* home content 
+*******************************************************/
+.home-content .reviews h2{
+  text-transform: none;
+  background: url(../img/quote.png) top left no-repeat;
+  padding: 5px 0 0 45px;
+}
+
+.home-content .reviews blockquote {
+  overflow: hidden;
+  border: none;
+}
+
+.home-content .reviews cite {
+  margin: 0;
+  padding: 0;
+}
+
+.home-content .reviews cite a{
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* buttons */
+.custom-btn{
+  margin-bottom: 60px;
+  padding: 15px 0 0 0;
+}
+
+.custom-btn a{
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* inner-content */
+.inner-content h1{
+  font-size: 60px;
+}
+
+.inner-content p{
+  font-size: 28px;
+}
+
+/* RESPONSIVE VIDEO */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Social icon */
+.soical-network{
+  margin-top: 15px;
+  float: right;
+}
+
+.icon-sprite{
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+    background: url(../img/social-icon-sprite.png) no-repeat;
+    background-position: left top;
+    margin-bottom: 30px;
+}
+
+.soical-network a{
+  text-indent: -9999px;
+}
+
+.icon-sprite.icon-2{
+    background-position: -29px top;
+}
+.icon-sprite.icon-3{
+    background-position: -58px top;
+}
+.icon-sprite.icon-4{
+  background-position: -87px top;
+}
+
+
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .navbar-nav{ padding: 30px 0;}
+  .navbar-collapse{ background: none;}
+  .navbar-default .navbar-nav>li>a{ border: none;}
+  .custom-btn{ padding: 60px 0 0 0;}
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
