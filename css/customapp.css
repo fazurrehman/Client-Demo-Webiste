@@ -65,6 +65,23 @@ a:hover, a:focus{
     width: 96%; }
 }
 
+/* responsive image */
+img{
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/*reset elements */
+ul,
+li,
+ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* custom navbar 
 *******************************************************/
 .header{
@@ -234,6 +251,80 @@ a:hover, a:focus{
   background-position: -87px top;
 }
 
+/* About us - home content 
+*******************************************************/
+.hero-unit{
+  width: 100%;
+}
+
+.about h1{
+  margin-bottom: 30px;
+  color: #0063c8;
+  text-transform: none;
+  padding: 0 15px;
+}
+
+.hero-unit img{
+  width: 100%;
+}
+
+.user-list{
+  width: 100%;
+}
+
+/* user profile */
+.user-list .user-pic{
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.user-list .user-pic img{
+  width: 100%;
+}
+
+.user-list .user-detail{
+  width: 100%;
+  padding: 0 15px;
+}
+
+.user-list .user-detail h3{
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.user-list .user-detail p{
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
+/* user box*/
+.user-list .user{
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+}
+
+.user-list .user:last-child{
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* other info */
+.other-info{
+  padding: 60px 15px;;
+  font-size: 1.2em;
+  line-height: 1.8; 
+}
+
+.other-info p{
+  margin-bottom: 30px;
+}
+
+.other-info a{
+  color: #2980b9;
+}
+
 
 
 /* Mobile first queries */
@@ -244,6 +335,8 @@ a:hover, a:focus{
 
 /* Larger than phablet */
 @media (min-width: 550px) {
+  .user-list .user-pic{ width: 30%; float: left; }
+  .user-list .user-detail{  width: 70%; float: left; }
 }
 
 /* Larger than tablet */
